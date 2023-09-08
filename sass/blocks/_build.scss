@@ -1,0 +1,349 @@
+.build {
+  padding: 37.5px 21px;
+
+  @media (min-width: 1024px) {
+    padding: 67.5px 53px;
+  }
+
+  @media (min-width: 1920px) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.build__heading {
+  margin-bottom: 20px;
+  letter-spacing: 0.68px;
+
+  @media (min-width: 1024px) {
+    letter-spacing: normal;
+    margin-bottom: 30px;
+  }
+}
+
+.build__description {
+  color: var(--gray-300);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: 1024px) {
+    padding: 0 260px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: 1920px) {
+    padding: 0 385px;
+  }
+}
+
+.build__form {
+  display: grid;
+  background-color: var(--white);
+  padding: 20px 20px 40px;
+  border-radius: 30px;
+  row-gap: 30px;
+
+  @media (min-width: 1024px) {
+    border-radius: 50px;
+    padding: 60px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 33px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  @media (min-width: 1920px) {
+    padding: 70px;
+    column-gap: 30px;
+  }
+}
+
+.build__form-field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media (min-width: 1024px) {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.build__form-field[for="direction"] {
+  .build__form-field-name {
+    margin-bottom: 11px;
+
+    @media (min-width: 1024px) {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.build__form-field-name {
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.build__form-input {
+  font: inherit;
+  background-color: var(--beige-100);
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+
+  @media (min-width: 1024px) {
+    padding: 20px;
+
+    &:hover,
+    &:focus {
+      background-color: var(--beige-200);
+      outline-color: var(--gray-300);
+    }
+  }
+}
+
+.build__form-select {
+  padding: 10px;
+  padding-right: 46px;
+  position: relative;
+  appearance: none;
+  background-image: url("../images/select-mark.svg");
+  background-repeat: no-repeat;
+  background-position: 240px 7px;
+  font: inherit;
+  background-color: var(--beige-100);
+  border-radius: 10px;
+  border: none;
+
+  @media (min-width: 1024px) {
+    padding: 20px;
+    padding-right: 46px;
+    background-position: 343px 21px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--beige-200);
+    }
+
+    &:focus {
+      background-color: var(--beige-200);
+      outline-color: var(--gray-300);
+    }
+  }
+
+  @media (min-width: 1920px) {
+    background-position: 454px 21px;
+  }
+}
+
+.build__form-field[for="comment"] {
+  @media (min-width: 1024px) {
+    grid-column: 1 / -1;
+  }
+}
+
+.build__form-textarea {
+  padding: 10px;
+  background-color: var(--beige-100);
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  min-height: 132px;
+  font: inherit;
+
+  @media (min-width: 1024px) {
+    padding: 20px;
+    min-height: 152px;
+
+    &:hover,
+    &:focus {
+      background-color: var(--beige-200);
+      outline-color: var(--gray-300);
+    }
+  }
+}
+
+.build__form-fieldset {
+  display: flex;
+  column-gap: 30px;
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  .build__form-field {
+    position: relative;
+    flex-direction: row;
+  }
+
+  @media (min-width: 1024px) {
+    grid-column: 1 / -1;
+  }
+}
+
+.build__form-radio {
+  order: -1;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 1024px) {
+    width: 26px;
+    height: 26px;
+    margin-right: 11px;
+  }
+}
+
+input[type="radio"]:checked + .build__form-radio::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--black);
+  border-radius: 50%;
+
+  @media (min-width: 1024px) {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+input[type="radio"]:focus-visible + .build__form-radio {
+  outline: auto var(--orange-200);
+
+  @media (min-width: 1920px) {
+    outline-color: var(--black);
+    outline-offset: 1px;
+  }
+}
+
+.build__form-checkbox {
+  display: block;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--black);
+  margin-right: 10px;
+  border-radius: 4px;
+
+  @media (min-width: 1024px) {
+    width: 26px;
+    height: 26px;
+  }
+
+  @media (min-width: 1920px) {
+    margin-right: 19px;
+  }
+}
+
+input[type="checkbox"]:checked + .build__form-checkbox {
+  background: url("../images/checkbox_mark.svg") center no-repeat;
+}
+
+input[type="checkbox"]:focus-visible + .build__form-checkbox {
+  outline: auto var(--orange-200);
+
+  @media (min-width: 1920px) {
+    outline-color: var(--black);
+    outline-offset: 1px;
+  }
+}
+
+.build__form-field[for="agree"] {
+  flex-direction: row;
+  color: var(--gray-300);
+
+  input {
+    top: 21px;
+    left: 12px;
+  }
+
+  a {
+    color: var(--black);
+    text-decoration: none;
+
+    @media (min-width: 1024px) {
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      &:active {
+        color: var(--green-400);
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    grid-column: 1 / -1;
+    font-size: 17px;
+    letter-spacing: -0.17px;
+  }
+}
+
+.build__form-controls {
+  @media (min-width: 1024px) {
+    margin-top: -2px;
+    grid-column: 1 / -1;
+  }
+}
+
+.build__form-button {
+  padding: 12px 29px;
+  color: var(--white);
+  background-color: var(--green-400);
+  width: 134px;
+  font: inherit;
+
+  @media (min-width: 1024px) {
+    width: 235px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--green-300);
+    }
+
+    &:active {
+      background-color: var(--green-200);
+    }
+  }
+}
+
+.build__form-button--submit {
+  margin-right: 6px;
+
+  @media (min-width: 1024px) {
+    margin-right: 26px;
+  }
+}
+
+.build__form-button--reset {
+  background-color: var(--green-100);
+  color: var(--green-400);
+
+  @media (min-width: 1024px) {
+    &:hover {
+      cursor: pointer;
+      background-color: var(--gray-100);
+    }
+
+    &:active {
+      background-color: var(--gray-200);
+    }
+  }
+}

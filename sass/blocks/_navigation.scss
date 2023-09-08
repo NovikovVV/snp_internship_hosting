@@ -1,0 +1,42 @@
+.navigation {
+  display: none;
+
+  @media (min-width: 1024px) {
+    display: block;
+  }
+}
+
+.navigation__list {
+  @media (min-width: 1024px) {
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px 30px;
+    max-width: 550px;
+    padding-top: 3px;
+  }
+
+  @media (min-width: 1920px) {
+    gap: 50px;
+  }
+}
+
+.navigation__link {
+  @media (min-width: 1024px) {
+    color: var(--white);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+}

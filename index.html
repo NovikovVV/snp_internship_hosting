@@ -11,8 +11,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Лучшие туры на любой вкус, а также возможность организовать отдых в индивидуальном формате ✈️">
-  <meta name="keywords" content="отдых, туры, путешествия, персональный подход, авторские туры, походы, сплавы, велопрогулки">
+  <meta name="description"
+    content="Лучшие туры на любой вкус, а также возможность организовать отдых в индивидуальном формате ✈️">
+  <meta name="keywords"
+    content="отдых, туры, путешествия, персональный подход, авторские туры, походы, сплавы, велопрогулки">
   <title>YourTour</title>
 </head>
 
@@ -20,7 +22,6 @@
   <header class="page-header">
     <div class="container">
       <section class="menu">
-        <h2 class="visually-hidden">Меню</h2>
         <div class="logo">
           <svg width="182" height="32" viewBox="0 0 182 32" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -82,116 +83,102 @@
     <div class="container">
       <section class="tours" id="tours">
         <h2 class="tours__heading h2-heading">Выбери свой тур</h2>
-        <form class="tours__form" action="https://echo.htmlacademy.ru/"
-          method="post">
-          <fieldset class="tours__filter">
-            <legend class="visually-hidden">Туры</legend>
-            <label class="tours__filter-item tours__filter-item--active">
-              <input class="visually-hidden" type="radio" name="tours"
-                value="popular" id="popular" checked>
-              <span>Популярные</span>
-            </label>
-            <label class="tours__filter-item">
-              <input class="visually-hidden" type="radio" name="tours"
-                value="authors" id="authors">
-              <span>Авторские</span>
-            </label>
-            <label class="tours__filter-item">
-              <input class="visually-hidden" type="radio" name="tours"
-                value="hike" id="hike">
-              <span>Походы</span>
-            </label>
-            <label class="tours__filter-item">
-              <input class="visually-hidden" type="radio" name="tours"
-                value="rafting" id="rafting">
-              <span>Сплавы</span>
-            </label>
-            <label class="tours__filter-item">
-              <input class="visually-hidden" type="radio" name="tours"
-                value="bike" id="bike">
-              <span>Велопрогулки</span>
-            </label>
-          </fieldset>
-          <button class="tours__form-submit" type="submit">Отправить</button>
-        </form>
+        <ul class="tours__filter">
+          <li class="tours__filter-item">
+            <a
+              class="tours__filter-link tours__filter-link--active">Популярные</a>
+          </li>
+          <li class="tours__filter-item">
+            <a href="#" class="tours__filter-link">Авторские</a>
+          </li>
+          <li class="tours__filter-item">
+            <a href="#" class="tours__filter-link">Походы</a>
+          </li>
+          <li class="tours__filter-item">
+            <a href="#" class="tours__filter-link">Сплавы</a>
+          </li>
+          <li class="tours__filter-item">
+            <a href="#" class="tours__filter-link">Велопрогулки</a>
+          </li>
+        </ul>
         <ul class="tours__list">
-          <li class="tours__item">
-            <picture class="tours__item-picture">
-              <img class="tours__item-image" src="images/tour-photo-1@1x.webp"
-                srcset="images/tour-photo-1@2x.webp 2x" alt="">
-            </picture>
-            <div class="tours__item-text">
-              <h3 class="tours__item-heading">Путешествие в горы</h3>
-              <span class="tours__item-price">от 80 000 руб</span>
-              <a class="tours__item-link card-button" href="#">
-                <span>Подробнее</span>
-              </a>
-            </div>
+          <li class="tours__card">
+            <a class="tours__item" href="#">
+              <picture class="tours__item-picture">
+                <img class="tours__item-image" src="images/tour-photo-1@1x.webp"
+                  srcset="images/tour-photo-1@2x.webp 2x" alt="">
+              </picture>
+              <div class="tours__item-text">
+                <h3 class="tours__item-heading">Путешествие в горы</h3>
+                <span class="tours__item-price">от 80 000 руб</span>
+                <span class="tours__item-details card-button">Подробнее</span>
+              </div>
+            </a>
           </li>
-          <li class="tours__item">
-            <picture class="tours__item-picture">
-              <img class="tours__item-image" src="images/tour-photo-2@1x.webp"
-                srcset="images/tour-photo-2@2x.webp 2x" alt="">
-            </picture>
-            <div class="tours__item-text">
-              <h3 class="tours__item-heading">Путешествие в горы</h3>
-              <span class="tours__item-price">от 80 000 руб</span>
-              <a class="tours__item-link card-button" href="#">
-                <span>Подробнее</span>
-              </a>
-            </div>
+          <li class="tours__card">
+            <a class="tours__item" href="#">
+              <picture class="tours__item-picture">
+                <img class="tours__item-image" src="images/tour-photo-2@1x.webp"
+                  srcset="images/tour-photo-2@2x.webp 2x" alt="">
+              </picture>
+              <div class="tours__item-text">
+                <h3 class="tours__item-heading">Путешествие в горы</h3>
+                <span class="tours__item-price">от 80 000 руб</span>
+                <span class="tours__item-details card-button">Подробнее</span>
+              </div>
+            </a>
           </li>
-          <li class="tours__item">
-            <picture class="tours__item-picture">
-              <img class="tours__item-image" src="images/tour-photo-3@1x.webp"
-                srcset="images/tour-photo-3@2x.webp 2x" alt="">
-            </picture>
-            <div class="tours__item-text">
-              <h3 class="tours__item-heading">Путешествие в горы</h3>
-              <span class="tours__item-price">от 80 000 руб</span>
-              <a class="tours__item-link card-button" href="#">
-                <span>Подробнее</span>
-              </a>
-            </div>
+          <li class="tours__card">
+            <a class="tours__item" href="#">
+              <picture class="tours__item-picture">
+                <img class="tours__item-image" src="images/tour-photo-3@1x.webp"
+                  srcset="images/tour-photo-3@2x.webp 2x" alt="">
+              </picture>
+              <div class="tours__item-text">
+                <h3 class="tours__item-heading">Путешествие в горы</h3>
+                <span class="tours__item-price">от 80 000 руб</span>
+                <span class="tours__item-details card-button">Подробнее</span>
+              </div>
+            </a>
           </li>
-          <li class="tours__item">
-            <picture class="tours__item-picture">
-              <img class="tours__item-image" src="images/tour-photo-4@1x.webp"
-                srcset="images/tour-photo-4@2x.webp 2x" alt="">
-            </picture>
-            <div class="tours__item-text">
-              <h3 class="tours__item-heading">Путешествие в горы</h3>
-              <span class="tours__item-price">от 80 000 руб</span>
-              <a class="tours__item-link card-button" href="#">
-                <span>Подробнее</span>
-              </a>
-            </div>
+          <li class="tours__card">
+            <a class="tours__item" href="#">
+              <picture class="tours__item-picture">
+                <img class="tours__item-image" src="images/tour-photo-4@1x.webp"
+                  srcset="images/tour-photo-4@2x.webp 2x" alt="">
+              </picture>
+              <div class="tours__item-text">
+                <h3 class="tours__item-heading">Путешествие в горы</h3>
+                <span class="tours__item-price">от 80 000 руб</span>
+                <span class="tours__item-details card-button">Подробнее</span>
+              </div>
+            </a>
           </li>
-          <li class="tours__item">
-            <picture class="tours__item-picture">
-              <img class="tours__item-image" src="images/tour-photo-5@1x.webp"
-                srcset="images/tour-photo-5@2x.webp 2x" alt="">
-            </picture>
-            <div class="tours__item-text">
-              <h3 class="tours__item-heading">Путешествие в горы</h3>
-              <span class="tours__item-price">от 80 000 руб</span>
-              <a class="tours__item-link card-button" href="#">
-                <span>Подробнее</span>
-              </a>
-            </div>
+          <li class="tours__card">
+            <a class="tours__item" href="#">
+              <picture class="tours__item-picture">
+                <img class="tours__item-image" src="images/tour-photo-5@1x.webp"
+                  srcset="images/tour-photo-5@2x.webp 2x" alt="">
+              </picture>
+              <div class="tours__item-text">
+                <h3 class="tours__item-heading">Путешествие в горы</h3>
+                <span class="tours__item-price">от 80 000 руб</span>
+                <span class="tours__item-details card-button">Подробнее</span>
+              </div>
+            </a>
           </li>
-          <li class="tours__item">
-            <picture class="tours__item-picture">
-              <img class="tours__item-image" src="images/tour-photo-6@1x.webp"
-                srcset="images/tour-photo-6@2x.webp 2x" alt="">
-            </picture>
-            <div class="tours__item-text">
-              <h3 class="tours__item-heading">Путешествие в горы</h3>
-              <span class="tours__item-price">от 80 000 руб</span>
-              <a class="tours__item-link card-button" href="#">
-                <span>Подробнее</span>
-              </a>
-            </div>
+          <li class="tours__card">
+            <a class="tours__item" href="#">
+              <picture class="tours__item-picture">
+                <img class="tours__item-image" src="images/tour-photo-6@1x.webp"
+                  srcset="images/tour-photo-6@2x.webp 2x" alt="">
+              </picture>
+              <div class="tours__item-text">
+                <h3 class="tours__item-heading">Путешествие в горы</h3>
+                <span class="tours__item-price">от 80 000 руб</span>
+                <span class="tours__item-details card-button">Подробнее</span>
+              </div>
+            </a>
           </li>
         </ul>
       </section>
@@ -335,109 +322,83 @@
       <p class="gallery__description">Идейные соображения высшего порядка, а
         также рамки и место обучения кадров</p>
       <ul class="gallery__list">
-        <li class="gallery__item gallery__item--airplane">
-          <a class="gallery__link" href="#">
-            <picture class="gallery__picture">
-              <img class="gallery__image" src="images/travel-photo-1@1x.webp"
-                srcset="images/travel-photo-1@2x.webp 2x" alt="">
-            </picture>
-          </a>
+        <li class="gallery__item">
+          <picture class="gallery__picture">
+            <img class="gallery__image" src="images/travel-photo-1@1x.webp"
+              srcset="images/travel-photo-1@2x.webp 2x" alt="">
+          </picture>
         </li>
-        <li class="gallery__item gallery__item--tent">
-          <a class="gallery__link" href="#">
-            <picture class="gallery__picture">
-              <img class="gallery__image" src="images/travel-photo-2@1x.webp"
-                srcset="images/travel-photo-2@2x.webp 2x" alt="">
-            </picture>
-          </a>
+        <li class="gallery__item gallery__item--desktop">
+          <picture class="gallery__picture">
+            <img class="gallery__image" src="images/travel-photo-2@1x.webp"
+              srcset="images/travel-photo-2@2x.webp 2x" alt="">
+          </picture>
         </li>
-        <li class="gallery__item gallery__item--hiking">
-          <a class="gallery__link" href="#">
-            <picture class="gallery__picture">
-              <img class="gallery__image" src="images/travel-photo-3@1x.webp"
-                srcset="images/travel-photo-3@2x.webp 2x" alt="">
-            </picture>
-          </a>
+        <li class="gallery__item gallery__item--tablet">
+          <picture class="gallery__picture">
+            <img class="gallery__image" src="images/travel-photo-3@1x.webp"
+              srcset="images/travel-photo-3@2x.webp 2x" alt="">
+          </picture>
         </li>
-        <li class="gallery__item gallery__item--road">
-          <a class="gallery__link" href="#">
-            <picture class="gallery__picture">
-              <img class="gallery__image" src="images/travel-photo-4@1x.webp"
-                srcset="images/travel-photo-4@2x.webp 2x" alt="">
-            </picture>
-          </a>
+        <li class="gallery__item">
+          <picture class="gallery__picture">
+            <img class="gallery__image" src="images/travel-photo-4@1x.webp"
+              srcset="images/travel-photo-4@2x.webp 2x" alt="">
+          </picture>
         </li>
-        <li class="gallery__item gallery__item--rocks">
-          <a class="gallery__link" href="#">
-            <picture class="gallery__picture">
-              <img class="gallery__image" src="images/travel-photo-5@1x.webp"
-                srcset="images/travel-photo-5@2x.webp 2x" alt="">
-            </picture>
-          </a>
+        <li class="gallery__item gallery__item--narrow">
+          <picture class="gallery__picture">
+            <img class="gallery__image" src="images/travel-photo-5@1x.webp"
+              srcset="images/travel-photo-5@2x.webp 2x" alt="">
+          </picture>
         </li>
-        <li class="gallery__item gallery__item--map">
-          <a class="gallery__link" href="#">
-            <picture class="gallery__picture">
-              <img class="gallery__image" src="images/travel-photo-6@1x.webp"
-                srcset="images/travel-photo-6@2x.webp 2x" alt="">
-            </picture>
-          </a>
+        <li class="gallery__item gallery__item--narrow gallery__item--tablet">
+          <picture class="gallery__picture">
+            <img class="gallery__image" src="images/travel-photo-6@1x.webp"
+              srcset="images/travel-photo-6@2x.webp 2x" alt="">
+          </picture>
         </li>
-        <li class="gallery__item gallery__item--bridge">
-          <a class="gallery__link" href="#">
-            <picture class="gallery__picture">
-              <img class="gallery__image" src="images/travel-photo-7@1x.webp"
-                srcset="images/travel-photo-7@2x.webp 2x" alt="">
-            </picture>
-          </a>
+        <li class="gallery__item gallery__item--narrow gallery__item--desktop">
+          <picture class="gallery__picture">
+            <img class="gallery__image" src="images/travel-photo-7@1x.webp"
+              srcset="images/travel-photo-7@2x.webp 2x" alt="">
+          </picture>
         </li>
-        <li class="gallery__item gallery__item--camping">
-          <a class="gallery__link" href="#">
-            <picture class="gallery__picture">
-              <img class="gallery__image" src="images/travel-photo-8@1x.webp"
-                srcset="images/travel-photo-8@2x.webp 2x" alt="">
-            </picture>
-          </a>
+        <li class="gallery__item gallery__item--narrow">
+          <picture class="gallery__picture">
+            <img class="gallery__image" src="images/travel-photo-8@1x.webp"
+              srcset="images/travel-photo-8@2x.webp 2x" alt="">
+          </picture>
         </li>
-        <li class="gallery__item gallery__item--morning-city">
-          <a class="gallery__link" href="#">
-            <picture class="gallery__picture">
-              <img class="gallery__image" src="images/travel-photo-13@1x.webp"
-                srcset="images/travel-photo-13@2x.webp 2x" alt="">
-            </picture>
-          </a>
+        <li class="gallery__item gallery__item--narrow">
+          <picture class="gallery__picture">
+            <img class="gallery__image" src="images/travel-photo-9@1x.webp"
+              srcset="images/travel-photo-9@2x.webp 2x" alt="">
+          </picture>
         </li>
-        <li class="gallery__item gallery__item---evening-city">
-          <a class="gallery__link" href="#">
-            <picture class="gallery__picture">
-              <img class="gallery__image" src="images/travel-photo-9@1x.webp"
-                srcset="images/travel-photo-9@2x.webp 2x" alt="">
-            </picture>
-          </a>
+        <li class="gallery__item">
+          <picture class="gallery__picture">
+            <img class="gallery__image" src="images/travel-photo-10@1x.webp"
+              srcset="images/travel-photo-10@2x.webp 2x" alt="">
+          </picture>
         </li>
-        <li class="gallery__item gallery__item--mountains">
-          <a class="gallery__link" href="#">
-            <picture class="gallery__picture">
-              <img class="gallery__image" src="images/travel-photo-10@1x.webp"
-                srcset="images/travel-photo-10@2x.webp 2x" alt="">
-            </picture>
-          </a>
+        <li class="gallery__item">
+          <picture class="gallery__picture">
+            <img class="gallery__image" src="images/travel-photo-11@1x.webp"
+              srcset="images/travel-photo-11@2x.webp 2x" alt="">
+          </picture>
         </li>
-        <li class="gallery__item gallery__item--market">
-          <a class="gallery__link" href="#">
-            <picture class="gallery__picture">
-              <img class="gallery__image" src="images/travel-photo-11@1x.webp"
-                srcset="images/travel-photo-11@2x.webp 2x" alt="">
-            </picture>
-          </a>
+        <li class="gallery__item gallery__item--tablet">
+          <picture class="gallery__picture">
+            <img class="gallery__image" src="images/travel-photo-12@1x.webp"
+              srcset="images/travel-photo-12@2x.webp 2x" alt="">
+          </picture>
         </li>
-        <li class="gallery__item gallery__item--sup">
-          <a class="gallery__link" href="#">
-            <picture class="gallery__picture">
-              <img class="gallery__image" src="images/travel-photo-12@1x.webp"
-                srcset="images/travel-photo-12@2x.webp 2x" alt="">
-            </picture>
-          </a>
+        <li class="gallery__item gallery__item--desktop">
+          <picture class="gallery__picture">
+            <img class="gallery__image" src="images/travel-photo-13@1x.webp"
+              srcset="images/travel-photo-13@2x.webp 2x" alt="">
+          </picture>
         </li>
       </ul>
     </section>

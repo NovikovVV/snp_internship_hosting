@@ -1,0 +1,13 @@
+.h2-heading {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 38px;
+  text-align: center;
+
+  @media (min-width: 1024px) {
+    font-size: 59px;
+    font-weight: 700;
+    line-height: 73px;
+  }
+}
