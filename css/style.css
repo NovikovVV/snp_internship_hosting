@@ -108,7 +108,6 @@ body {
 .menu {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
   padding: 32px 21px;
   font-size: 16px;
   line-height: 23px;
@@ -133,6 +132,8 @@ body {
 .logo svg {
   width: 133px;
   height: 22px;
+  fill: #ffffff;
+  margin-right: 61px;
 }
 
 @media (min-width: 1024px) {
@@ -140,6 +141,14 @@ body {
   .logo svg {
     width: 182px;
     height: 32px;
+    margin-right: 82px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .logo,
+  .logo svg {
+    margin-right: 181px;
   }
 }
 
@@ -150,6 +159,13 @@ body {
 @media (min-width: 1024px) {
   .navigation {
     display: block;
+    margin-right: 82px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .navigation {
+    margin-right: 181px;
   }
 }
 
@@ -697,6 +713,15 @@ body {
   border-radius: 10px;
   padding: 10px;
   border: none;
+  color: var(--black);
+}
+
+.build__form-input::-moz-placeholder {
+  color: var(--gray-300);
+}
+
+.build__form-input::placeholder {
+  color: var(--gray-300);
 }
 
 @media (min-width: 1024px) {
@@ -725,6 +750,11 @@ body {
   background-color: var(--beige-100);
   border-radius: 10px;
   border: none;
+  color: var(--gray-300);
+}
+
+.build__form-select--black {
+  color: var(--black);
 }
 
 @media (min-width: 1024px) {
@@ -765,6 +795,7 @@ body {
   resize: none;
   min-height: 132px;
   font: inherit;
+  color: var(--black);
 }
 
 @media (min-width: 1024px) {
@@ -1200,7 +1231,7 @@ input[type="checkbox"]:focus-visible + .build__form-checkbox {
 
 @media (min-width: 1920px) {
   .gallery {
-    width: 1920px;
+    width: 1903px;
     padding-right: 30px;
     padding-left: 30px;
   }
@@ -1858,5 +1889,34 @@ input[type="checkbox"]:focus-visible + .build__form-checkbox {
 
   .social__link:active {
     color: var(--orange-200);
+  }
+}
+
+.sticky {
+  background: rgba(243, 239, 232, 0.6);
+  -webkit-backdrop-filter: blur(27px);
+  backdrop-filter: blur(27px);
+  color: var(--black);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  justify-content: center;
+}
+
+.sticky .logo svg {
+  fill: var(--black);
+}
+
+.sticky .navigation__link,
+.sticky .phone__link {
+  color: var(--black);
+}
+
+@media (min-width: 1920px) {
+  .sticky {
+    padding-left: 365px;
+    padding-right: 365px;
   }
 }
